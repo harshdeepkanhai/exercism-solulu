@@ -1,0 +1,13 @@
+def response(hey_bob):
+    hey_bob = hey_bob.rstrip()
+    is_question = hey_bob.endswith("?")
+    is_yelling = hey_bob.isupper()
+    if not hey_bob:
+        return "Fine. Be that way!"
+    if is_question and is_yelling:
+        return "Calm down, I know what I'm doing!"
+    if is_question:
+        return "Sure."
+    if is_yelling:
+        return "Whoa, chill out!"
+    return "Whatever."

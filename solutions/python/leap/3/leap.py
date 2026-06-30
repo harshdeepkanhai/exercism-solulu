@@ -1,0 +1,4 @@
+from datetime import datetime, timedelta
+
+def leap_year(year):
+    return (datetime(year, 2, 28) + timedelta(days=1)).day == 29
